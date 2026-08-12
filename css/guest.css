@@ -113,3 +113,13 @@ svg {
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
 }
+
+/* Force carousel transitions even if system animations are turned off */
+.carousel-item {
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.carousel-fade .carousel-item {
+    transition-property: opacity !important;
+    transition-duration: 0.6s !important;
+}
