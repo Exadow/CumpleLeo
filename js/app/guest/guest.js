@@ -255,10 +255,10 @@ export const guest = (() => {
         const url = new URL('https://calendar.google.com/calendar/render');
         const data = new URLSearchParams({
             action: 'TEMPLATE',
-            text: 'Nos Casamos!! Diego y Yesica',
-            dates: `${formatDate('2026-07-24 10:00')}/${formatDate('2026-07-24 11:00')}`,
-            details: '',
-            location: '',
+            text: 'Cumple de Leo',
+            dates: `${formatDate('2026-08-22 13:00')}/${formatDate('2026-08-22 21:00')}`,
+            details: 'Festejo del cumpleaños de Leo en Quinta la morita',
+            location: 'Calle 1355 y Avenida de los Inmigrantes(Calle 1314), Villa San Luis, Florencio Varela, Buenos Aires',
             ctz: 'America/Argentina/Buenos_Aires',
         });
 
