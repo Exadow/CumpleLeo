@@ -4,8 +4,8 @@ import { cache } from '../../connection/cache.js';
 
 export const audio = (() => {
 
-    const statePlay = '<i class="fa-solid fa-circle-pause spin-button"></i>';
-    const statePause = '<i class="fa-solid fa-circle-play"></i>';
+    const statePlay = '<i class="fa-solid fa-volume-high"></i>';
+    const statePause = '<i class="fa-solid fa-volume-xmark"></i>';
 
     /**
      * @param {boolean} [playOnOpen=true]
@@ -32,7 +32,7 @@ export const audio = (() => {
             audioEl.controls = false;
 
             const vol = document.body.getAttribute('data-volume');
-            audioEl.volume = vol !== null ? Math.max(0, Math.min(1, parseFloat(vol))) : 0.5;
+            audioEl.volume = vol !== null ? Math.max(0, Math.min(1, parseFloat(vol))) : 0.2;
 
             progress.complete('audio');
         } catch {
