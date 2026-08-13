@@ -93,7 +93,7 @@
 
 <!-- <html lang="id" data-bs-theme="auto"> ['auto', 'dark', 'light'] -->
 
-<body data-confetti="true" data-time="2026-08-22 13:00:00">
+<body data-confetti="true" data-time="2026-08-22 13:00:00" data-audio="./assets/music/Tata Vega, Lebo M. - Ciclo Sin Fin (De El Rey LeónBanda Sonora Original).mp3" data-volume="0.2">
 
     <!-- Root Invitation -->
     <div class="row m-0 p-0 opacity-0" id="root">
@@ -460,16 +460,16 @@
     <div class="d-flex position-fixed flex-column" style="bottom: 10vh; right: 2vh; z-index: 1030;">
         <!-- Theme Button -->
         <button type="button" id="button-theme"
-            class="btn bg-light-dark border btn-sm rounded-circle d-none btn-transparent shadow-sm mt-3"
+            class="btn bg-light-dark border btn-floating rounded-circle d-none btn-transparent shadow-sm mt-3"
             aria-label="Change theme" onclick="undangan.theme.change()">
             <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
 
         <!-- Audio Button -->
         <button type="button" id="button-music"
-            class="btn bg-light-dark border btn-sm rounded-circle d-none btn-transparent shadow-sm mt-3"
+            class="btn bg-light-dark border btn-floating rounded-circle d-none btn-transparent shadow-sm mt-3"
             aria-label="Change audio" data-offline-disabled="false">
-            <i class="fa-solid fa-circle-pause spin-button"></i>
+            <i class="fa-solid fa-volume-xmark"></i>
         </button>
     </div>
 
